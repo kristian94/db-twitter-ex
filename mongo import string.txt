@@ -1,0 +1,1 @@
+mongoimport -d kn-twitter-test -c tweet --type csv --file C:\training.1600000.processed.noemoticon.csv --fields "polarity,id,date,query,user,text"
