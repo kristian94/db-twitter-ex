@@ -10,7 +10,7 @@ module.exports = function(fn){
     MongoClient.connect(url, function(err, client) {
 
         const db = client.db(dbName);
-        const collection = db.collection('tweet');
+        const collection = db.collection('tweets');
 
         fn(collection, () => {
             client.close();
